@@ -18,7 +18,8 @@ namespace DocumentClassifier.Tests
             // Configurar las rutas y servicios necesarios para las pruebas
             var basePath = AppContext.BaseDirectory;
             var solutionRoot = Path.GetFullPath(Path.Combine(basePath, "..", "..", "..", ".."));
-            var categoriesJsonPath = Path.Combine(solutionRoot, "DocumentClassifier.ConsoleApp", "categories.json");
+            // Actualizar la ruta para apuntar al proyecto WebApi
+            var categoriesJsonPath = Path.Combine(solutionRoot, "DocumentClassifier.WebApi", "categories.json");
 
             // Usar el servicio de OCR simulado para las pruebas
             var ocrService = new TesseractOcrService();
