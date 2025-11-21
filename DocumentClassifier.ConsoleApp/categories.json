@@ -1,0 +1,155 @@
+[
+  {
+    "GroupName": "DP",
+    "GroupDescription": "DOCUMENTOS PERSONALES",
+    "Categories": [
+      {
+        "CategoryId": "01",
+        "CategoryName": "Solicitud de empleo, currículum, cartas de recomendación",
+        "Keywords": ["solicitud de empleo", "curriculum", "curriculum vitae", "cartas de recomendacion"]
+      },
+      {
+        "CategoryId": "02",
+        "CategoryName": "Actas del registro civil (nacimiento, matrimonio, divorcio, defunción)",
+        "Keywords": ["acta de nacimiento", "acta de matrimonio", "acta de divorcio", "acta de defuncion", "registro civil"]
+      },
+      {
+        "CategoryId": "03",
+        "CategoryName": "Comprobante domiciliario",
+        "Keywords": ["comprobante de domicilio", "recibo de luz", "recibo de telefono", "recibo de agua", "estado de cuenta"]
+      },
+      {
+        "CategoryId": "04",
+        "CategoryName": "RFC",
+        "Keywords": ["rfc", "registro federal de contribuyentes", "cedula de identificacion fiscal"]
+      },
+      {
+        "CategoryId": "05",
+        "CategoryName": "CURP",
+        "Keywords": ["curp", "clave unica de registro de poblacion"]
+      },
+      {
+        "CategoryId": "06",
+        "CategoryName": "Identificación oficial (INE, pasaporte)",
+        "Keywords": ["ine", "ife", "instituto nacional electoral", "pasaporte", "identificacion oficial"]
+      },
+      {
+        "CategoryId": "07",
+        "CategoryName": "Cartilla militar",
+        "Keywords": ["cartilla militar", "servicio militar nacional"]
+      },
+      {
+        "CategoryId": "08",
+        "CategoryName": "Antecedentes penales",
+        "Keywords": ["antecedentes no penales", "carta de no antecedentes penales"]
+      },
+      {
+        "CategoryId": "09",
+        "CategoryName": "Certificado médico",
+        "Keywords": ["certificado medico", "examen medico"]
+      },
+      {
+        "CategoryId": "10",
+        "CategoryName": "Formato Hidalgo/MetLife",
+        "Keywords": ["formato hidalgo", "metlife"]
+      },
+      {
+        "CategoryId": "11",
+        "CategoryName": "Documentos del SAR",
+        "Keywords": ["sar", "afore", "sistema de ahorro para el retiro"]
+      },
+      {
+        "CategoryId": "12",
+        "CategoryName": "Documentos del FORTE",
+        "Keywords": ["forte", "fondo de ahorro"]
+      }
+    ]
+  },
+  {
+    "GroupName": "FP",
+    "GroupDescription": "FORMACIÓN PROFESIONAL",
+    "Categories": [
+      {
+        "CategoryId": "01",
+        "CategoryName": "Título profesional, maestría, acta de examen",
+        "Keywords": ["titulo profesional", "maestria", "acta de examen"]
+      },
+      {
+        "CategoryId": "02",
+        "CategoryName": "Cédula profesional",
+        "Keywords": ["cedula profesional"]
+      },
+      {
+        "CategoryId": "03",
+        "CategoryName": "Carta pasante / certificado de terminación",
+        "Keywords": ["carta de pasante", "certificado de terminacion"]
+      },
+      {
+        "CategoryId": "04",
+        "CategoryName": "Certificado de bachillerato",
+        "Keywords": ["certificado de bachillerato", "preparatoria"]
+      },
+      {
+        "CategoryId": "05",
+        "CategoryName": "Certificado de secundaria",
+        "Keywords": ["certificado de secundaria"]
+      },
+      {
+        "CategoryId": "06",
+        "CategoryName": "Certificado de primaria",
+        "Keywords": ["certificado de primaria"]
+      },
+      {
+        "CategoryId": "07",
+        "CategoryName": "Calificaciones, constancias, diplomas",
+        "Keywords": ["calificaciones", "constancia", "diploma"]
+      }
+    ]
+  },
+  {
+    "GroupName": "HL",
+    "GroupDescription": "HISTORIAL LABORAL",
+    "Categories": [
+      { "CategoryId": "12", "CategoryName": "Hoja única de servicios", "Keywords": ["hoja unica de servicios"] },
+      { "CategoryId": "13", "CategoryName": "FUP", "Keywords": ["fup", "formato unico de personal"] },
+      { "CategoryId": "14", "CategoryName": "Altas, bajas IMSS/ISSSTE", "Keywords": ["alta imss", "baja imss", "alta issste", "baja issste"] },
+      { "CategoryId": "15", "CategoryName": "Permutas", "Keywords": ["permuta", "solicitud de permuta"] },
+      { "CategoryId": "16", "CategoryName": "Solicitudes de licencias", "Keywords": ["solicitud de licencia"] },
+      { "CategoryId": "17", "CategoryName": "Oficios y comisiones", "Keywords": ["oficio", "comision"] },
+      { "CategoryId": "18", "CategoryName": "Dictámenes escalafonarios", "Keywords": ["dictamen escalafonario"] },
+      { "CategoryId": "19", "CategoryName": "Laudos", "Keywords": ["laudo"] },
+      { "CategoryId": "20", "CategoryName": "Descuentos judiciales / pensión alimenticia", "Keywords": ["descuento judicial", "pension alimenticia"] },
+      { "CategoryId": "24", "CategoryName": "Carátulas de juicios", "Keywords": ["caratula de juicio"] },
+      { "CategoryId": "25", "CategoryName": "Régimen ISSSTE", "Keywords": ["regimen issste"] },
+      { "CategoryId": "26", "CategoryName": "Adscripción definitiva", "Keywords": ["adscripcion definitiva"] },
+      { "CategoryId": "27", "CategoryName": "Toma de posesión", "Keywords": ["toma de posesion"] },
+      { "CategoryId": "32", "CategoryName": "Constancias de no adeudo", "Keywords": ["constancia de no adeudo"] },
+      { "CategoryId": "33", "CategoryName": "Movimientos de nómina", "Keywords": ["movimiento de nomina"] },
+      { "CategoryId": "34", "CategoryName": "Solicitud de días económicos", "Keywords": ["dias economicos"] },
+      { "CategoryId": "35", "CategoryName": "Cambio de adscripción", "Keywords": ["cambio de adscripcion"] },
+      { "CategoryId": "36", "CategoryName": "Modificación de datos personales", "Keywords": ["modificacion de datos"] },
+      { "CategoryId": "37", "CategoryName": "Premios y estímulos", "Keywords": ["premio", "estimulo"] },
+      { "CategoryId": "38", "CategoryName": "Corrección de antigüedad", "Keywords": ["correccion de antiguedad"] },
+      { "CategoryId": "39", "CategoryName": "Dictámenes médicos", "Keywords": ["dictamen medico"] },
+      { "CategoryId": "40", "CategoryName": "Licencias médicas", "Keywords": ["licencia medica"] },
+      { "CategoryId": "42", "CategoryName": "Carrera magisterial", "Keywords": ["carrera magisterial"] },
+      { "CategoryId": "44", "CategoryName": "Constancias de servicio", "Keywords": ["constancia de servicio"] },
+      { "CategoryId": "45", "CategoryName": "Bajas y renuncias", "Keywords": ["baja", "renuncia"] },
+      { "CategoryId": "46", "CategoryName": "Asistencias de personal", "Keywords": ["asistencia de personal"] },
+      { "CategoryId": "47", "CategoryName": "Acta de academia", "Keywords": ["acta de academia"] },
+      { "CategoryId": "48", "CategoryName": "Documento único de adscripción", "Keywords": ["documento unico de adscripcion"] },
+      { "CategoryId": "49", "CategoryName": "Ficha de examen de oposición", "Keywords": ["examen de oposicion"] },
+      { "CategoryId": "50", "CategoryName": "Sanciones administrativas", "Keywords": ["sancion administrativa"] },
+      { "CategoryId": "51", "CategoryName": "Contrato de apoyo", "Keywords": ["contrato de apoyo"] },
+      { "CategoryId": "52", "CategoryName": "Carátula individual de movimiento", "Keywords": ["caratula individual de movimiento"] },
+      { "CategoryId": "53", "CategoryName": "Movimientos SEP federal", "Keywords": ["movimientos sep"] },
+      { "CategoryId": "54", "CategoryName": "Compatibilidad de empleo", "Keywords": ["compatibilidad de empleo"] },
+      { "CategoryId": "55", "CategoryName": "Documentos varios de trámites", "Keywords": ["tramites varios"] },
+      { "CategoryId": "56", "CategoryName": "Documentos no oficiales redactados por el empleado", "Keywords": ["documento no oficial"] },
+      { "CategoryId": "57", "CategoryName": "Salarios pagados/descontados", "Keywords": ["salarios pagados", "descuentos"] },
+      { "CategoryId": "58", "CategoryName": "Contratación servicios a terceros", "Keywords": ["contratacion de servicios"] },
+      { "CategoryId": "59", "CategoryName": "Planeación (ficha técnica, cadenas, techo financiero)", "Keywords": ["planeacion", "ficha tecnica", "techo financiero"] },
+      { "CategoryId": "60", "CategoryName": "Constancias de sueldos y salarios", "Keywords": ["constancia de sueldos", "constancia de salarios"] }
+    ]
+  }
+]
