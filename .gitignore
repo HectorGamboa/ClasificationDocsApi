@@ -1,0 +1,15 @@
+# .NET Core
+**/[Bb]in/
+**/[Oo]bj/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archivos de Tesseract (si se descargan)
+tesseract.AppImage
+**/tessdata/
+
+# Archivos de modelo de ML
+*.zip
