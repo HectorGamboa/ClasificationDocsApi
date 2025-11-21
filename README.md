@@ -1,12 +1,12 @@
-# Sistema de Clasificación de Documentos
+# Sistema de Clasificación de Documentos (Web API)
 
-Este proyecto es una solución en .NET 8 diseñada para clasificar automáticamente documentos escaneados. Utiliza una combinación de reglas basadas en palabras clave, OCR y un modelo de Machine Learning para determinar a qué categoría pertenece cada documento y moverlo a la carpeta correspondiente.
+Este proyecto es una solución en .NET 8 diseñada para clasificar automáticamente documentos escaneados. Utiliza una combinación de reglas basadas en palabras clave, OCR y un modelo de Machine Learning para determinar a qué categoría pertenece cada documento.
 
 ## Arquitectura
 
 La solución está organizada en una arquitectura limpia con los siguientes proyectos:
 
--   `DocumentClassifier.ConsoleApp`: La aplicación principal que orquesta el proceso de clasificación.
+-   `DocumentClassifier.WebApi`: Una API de ASP.NET Core que expone un endpoint para la clasificación de documentos.
 -   `DocumentClassifier.Core`: Contiene la lógica de negocio principal, incluyendo los servicios, interfaces y modelos de dominio.
 -   `DocumentClassifier.Infrastructure`: Se encarga de las implementaciones externas, como el servicio de OCR.
 -   `DocumentClassifier.ML`: Gestiona el entrenamiento y la predicción del modelo de Machine Learning.
@@ -35,18 +35,24 @@ El servicio de OCR utiliza Tesseract. Por defecto, la implementación está **si
 El modelo de ML está diseñado para clasificar documentos cuando las reglas de palabras clave no son suficientes.
 
 -   **Datos de Entrenamiento:** Se incluye un pequeño archivo de ejemplo (`sample-data.csv`) en el proyecto `DocumentClassifier.ML/Data`. Este archivo es solo para fines de demostración.
--   **Mejorar la Precisión:** Para obtener resultados precisos, necesitas proporcionar un conjunto de datos de entrenamiento mucho más grande y representativo de tus documentos. Añade más ejemplos al archivo CSV, asegurándote de que cada línea contenga una muestra de texto y la categoría correspondiente (ej. `mi primer titulo,FP-01`).
+-   **Mejorar la Precisión:** Para obtener resultados precisos, necesitas proporcionar un conjunto de datos de entrenamiento mucho más grande y representativo de tus documentos.
 
-La aplicación entrenará y guardará automáticamente el modelo (`document-classifier-model.zip`) en la carpeta de salida la primera vez que se ejecute.
+La API entrenará y guardará automáticamente el modelo (`document-classifier-model.zip`) en la carpeta de salida la primera vez que se inicie.
 
 ### 3. Procesamiento de PDFs
 
-La implementación de Tesseract incluida está configurada para procesar archivos de **imagen**. Para procesar archivos PDF, necesitarás convertir cada página del PDF a una imagen y luego pasarla al servicio de OCR.
+La implementación de Tesseract incluida está configurada para procesar archivos de **imagen**. Para procesar archivos PDF, necesitarás convertir cada página del PDF a una imagen y luego pasarla al servicio de OCR. Puedes lograr esto utilizando una librería adicional como `PdfiumViewer`.
 
-Puedes lograr esto utilizando una librería adicional como `PdfiumViewer`. Esta funcionalidad no está incluida, pero puede ser añadida modificando el `TesseractOcrService` para manejar archivos PDF.
+## Ejecución de la API
 
-## Ejecución de la Aplicación
+1.  Inicia el proyecto `DocumentClassifier.WebApi`.
+2.  La API estará disponible en `https://localhost:<puerto>`.
+3.  Puedes usar una herramienta como `curl` o Postman para enviar documentos al endpoint de clasificación.
 
-1.  Coloca tus documentos escaneados en la carpeta `DocumentClassifier.ConsoleApp/bin/Debug/net8.0/Input`.
-2.  Ejecuta la aplicación de consola.
-3.  Los documentos clasificados se moverán a la carpeta `DocumentClassifier.ConsoleApp/bin/Debug/net8.0/Clasificados`, organizados por grupo y categoría.
+### Ejemplo de Uso con `curl`
+
+```bash
+curl -X POST -F "file=@/ruta/a/tu/documento.png" https://localhost:<puerto>/api/classification/upload
+```
+
+La respuesta será un JSON con el resultado de la clasificación. Los archivos clasificados se guardarán en la carpeta `DocumentClassifier.WebApi/bin/Debug/net8.0/Clasificados`.
